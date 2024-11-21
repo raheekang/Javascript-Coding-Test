@@ -1,13 +1,14 @@
 function solution(numer1, denom1, numer2, denom2) {
     var answer = [];
+
+    // 분수 통일
+    const numer = numer1 * denom2 + numer2 * denom1; //분자,분모 곱해서 더한 값
+    const denom = denom1 * denom2; // 분모 
     
     // 최대공약수로 나눠야함 
-    const numer = numer1 * denom2 + numer2 * denom1;
-    const denom = denom1 * denom2;
-    
     let minNumber;
     if(numer < denom){
-        minNumber = numer;
+        minNumber = numer; 
     } else {
         minNumber = denom;
     }

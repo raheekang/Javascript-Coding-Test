@@ -1,0 +1,8 @@
+function solution(numbers) {
+    var answer = [];
+    
+    answer = numbers.map(x=>x*2);
+    return answer;
+}
+
+console.log(solution([1,2,3,4]))
